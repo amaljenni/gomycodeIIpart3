@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Photos from "./Photos"
+import Text from "./Text"
+import Link from "./Link"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    document.body.style.backgroundColor = "rgb(219,112,147)",
+    <div className="App" >
+      {/* <div className="row-md-12">
+        <div className="col-md-3">
+
+        </div>
+        <div className="col-md-3"> */}
+          <Photos/>
+        {/* </div>
+        <div className="col-md-3"> */}
+          <Text/>
+        {/* </div>
+        <div className="col-md-3">
+
+        </div>
+      </div> */}
+      
+     
+     
+          <Link/>
     </div>
   );
 }
